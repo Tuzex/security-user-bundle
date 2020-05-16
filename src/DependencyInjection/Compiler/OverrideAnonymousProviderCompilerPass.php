@@ -4,9 +4,9 @@ declare(strict_types=1);
 
 namespace Tuzex\Bundle\Security\DependencyInjection\Compiler;
 
-use Tuzex\Security\User\Authentication\AnonymousAuthenticationProvider;
 use Symfony\Component\DependencyInjection\Compiler\CompilerPassInterface;
 use Symfony\Component\DependencyInjection\ContainerBuilder;
+use Tuzex\Security\User\Authentication\AnonymousAuthenticationProvider;
 
 final class OverrideAnonymousProviderCompilerPass implements CompilerPassInterface
 {

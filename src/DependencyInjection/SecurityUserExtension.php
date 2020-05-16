@@ -4,12 +4,12 @@ declare(strict_types=1);
 
 namespace Tuzex\Bundle\Security\DependencyInjection;
 
-use Tuzex\Security\User\Authentication\Storage\AuthenticableRepository;
 use Symfony\Component\Config\FileLocator;
 use Symfony\Component\DependencyInjection\ContainerBuilder;
 use Symfony\Component\DependencyInjection\Extension\Extension;
 use Symfony\Component\DependencyInjection\Extension\ExtensionInterface;
 use Symfony\Component\DependencyInjection\Loader\XmlFileLoader;
+use Tuzex\Security\User\Authentication\Storage\AuthenticableRepository;
 
 final class SecurityUserExtension extends Extension implements ExtensionInterface
 {
@@ -20,7 +20,7 @@ final class SecurityUserExtension extends Extension implements ExtensionInterfac
 
     public function __construct()
     {
-        $this->fileLocator = new FileLocator(__DIR__ . '/../Resources/config');
+        $this->fileLocator = new FileLocator(__DIR__.'/../Resources/config');
     }
 
     public function load(array $configs, ContainerBuilder $builder): void
@@ -28,7 +28,7 @@ final class SecurityUserExtension extends Extension implements ExtensionInterfac
         $this->registerTags($builder);
         $this->registerServices($builder);
     }
-    
+
     private function registerTags(ContainerBuilder $builder): void
     {
         $builder->registerForAutoconfiguration(AuthenticableRepository::class)

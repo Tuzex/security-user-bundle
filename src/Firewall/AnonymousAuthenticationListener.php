@@ -4,12 +4,12 @@ declare(strict_types=1);
 
 namespace Tuzex\Bundle\Security\Firewall;
 
-use Tuzex\Security\User\Authentication\TokenFactory;
 use Psr\Log\LoggerInterface as Logger;
 use Symfony\Component\HttpKernel\Event\RequestEvent;
 use Symfony\Component\Security\Core\Authentication\AuthenticationManagerInterface as AuthenticationManager;
 use Symfony\Component\Security\Core\Authentication\Token\Storage\TokenStorageInterface as TokenStorage;
 use Symfony\Component\Security\Core\Exception\AuthenticationException;
+use Tuzex\Security\User\Authentication\TokenFactory;
 
 final class AnonymousAuthenticationListener
 {

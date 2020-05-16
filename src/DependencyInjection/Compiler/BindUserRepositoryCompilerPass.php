@@ -4,10 +4,10 @@ declare(strict_types=1);
 
 namespace Tuzex\Bundle\Security\DependencyInjection\Compiler;
 
-use Tuzex\Security\User\Authentication\Storage\AuthenticableRepository;
 use Symfony\Component\DependencyInjection\Alias;
 use Symfony\Component\DependencyInjection\Compiler\CompilerPassInterface;
 use Symfony\Component\DependencyInjection\ContainerBuilder;
+use Tuzex\Security\User\Authentication\Storage\AuthenticableRepository;
 
 final class BindUserRepositoryCompilerPass implements CompilerPassInterface
 {
@@ -18,7 +18,7 @@ final class BindUserRepositoryCompilerPass implements CompilerPassInterface
             return;
         }
 
-        $repositoryId = array_key_first($repositoryIds);
+        $repositoryId = (string) array_key_first($repositoryIds);
         $repository = $builder->getDefinition($repositoryId);
 
         $repositoryClass = (string) $repository->getClass();

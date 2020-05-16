@@ -4,12 +4,12 @@ declare(strict_types=1);
 
 namespace Tuzex\Bundle\Security\DependencyInjection\Compiler;
 
-use Tuzex\Bundle\Security\Firewall\AnonymousAuthenticationListener;
-use Tuzex\Security\User\Authentication\AnonymousAuthenticationProvider;
-use Tuzex\Security\User\Authentication\AnonymousTokenFactory;
 use Symfony\Component\DependencyInjection\Compiler\CompilerPassInterface;
 use Symfony\Component\DependencyInjection\ContainerBuilder;
 use Symfony\Component\DependencyInjection\Reference;
+use Tuzex\Bundle\Security\Firewall\AnonymousAuthenticationListener;
+use Tuzex\Security\User\Authentication\AnonymousAuthenticationProvider;
+use Tuzex\Security\User\Authentication\AnonymousTokenFactory;
 
 final class OverrideAnonymousListenerCompilerPass implements CompilerPassInterface
 {
