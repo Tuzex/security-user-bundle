@@ -10,10 +10,14 @@
         </defaults>
 
         <service id="Tuzex\Security\User\Util\IdentifierGenerator" class="Tuzex\Security\User\Util\UuidIdentifierGenerator"/>
+
         <service id="Tuzex\Security\User\Authentication\TokenProvider" class="Tuzex\Security\User\Authentication\TokenProvider"/>
         <service id="Tuzex\Security\User\Authentication\AnonymousTokenFactory" class="Tuzex\Security\User\Authentication\AnonymousTokenFactory"/>
         <service id="Tuzex\Security\User\Authentication\AnonymousAuthenticationProvider" class="Tuzex\Security\User\Authentication\AnonymousAuthenticationProvider"/>
         <service id="Tuzex\Security\User\Authentication\KnownUserProvider" class="Tuzex\Security\User\Authentication\KnownUserProvider"/>
+
+        <service id="Tuzex\Security\User\UserProvider" class="Tuzex\Security\User\TokenUserProvider"/>
+        <service id="Tuzex\Security\User\UserAuthorization" class="Tuzex\Security\User\SecurityUserAuthorization"/>
         <service id="Tuzex\Security\User\UserAccessor" class="Tuzex\Security\User\UserAccessor"/>
 
         <service id="Tuzex\Bundle\Security\Firewall\AnonymousAuthenticationListener" class="Tuzex\Bundle\Security\Firewall\AnonymousAuthenticationListener"/>
