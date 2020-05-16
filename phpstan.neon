@@ -1,0 +1,10 @@
+parameters:
+    autoload_files:
+        - %rootDir%/../../../vendor/autoload.php
+
+    checkMissingIterableValueType: false
+
+    ignoreErrors:
+        -
+            message: '#Method Tuzex\\Bundle\\Security\\DependencyInjection\\Factory\\AnonymousSecurityFactory::create\(\) has parameter \$[a-zA-Z]+ with no typehint specified.#'
+            path: 'src\DependencyInjection\Factory\AnonymousSecurityFactory.php'
