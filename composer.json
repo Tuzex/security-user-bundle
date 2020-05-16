@@ -39,12 +39,12 @@
     "check": [
       "@check:composer"
     ],
-    "test:static": "phpstan analyse tests src -l max -c phpstan.neon",
+    "test:static": "phpstan analyse src -l max -c phpstan.neon",
     "test": [
       "@test:static"
     ],
     "cs": [
-      "ecs check src tests --config easy-coding-standard.yml"
+      "ecs check src --config easy-coding-standard.yml"
     ],
     "cs:fix": [
       "ecs check src tests --config easy-coding-standard.yml --fix",
