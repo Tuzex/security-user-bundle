@@ -13,10 +13,7 @@ use Tuzex\Security\User\Authentication\Storage\AuthenticableRepository;
 
 final class SecurityUserExtension extends Extension implements ExtensionInterface
 {
-    /**
-     * @var FileLocator
-     */
-    private $fileLocator;
+    private FileLocator $fileLocator;
 
     public function __construct()
     {
