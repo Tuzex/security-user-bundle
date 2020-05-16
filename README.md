@@ -1,4 +1,5 @@
 # Tuzex / security-user-bundle
+[![Build Status](https://travis-ci.org/Tuzex/security-user-bundle.svg?branch=master)](https://travis-ci.org/github/Tuzex/security-user-bundle)
 
 Unified behavior of the user for Symfony SecurityBundle 4.3<.
 
