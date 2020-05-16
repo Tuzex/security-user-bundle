@@ -55,6 +55,6 @@
     "check": "Validate the composer.json file.",
     "test": "Run all unit tests and the static analysis of codes.",
     "cs": "Run coding standards checkers.",
-    "cs-fix": "Fix-ups the code in accordance with our coding standards."
+    "cs:fix": "Fix-ups the code in accordance with our coding standards."
   }
 }
