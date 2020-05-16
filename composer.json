@@ -28,7 +28,7 @@
     "symfony/framework-bundle": "4.4.*|5.0.*",
     "symfony/security-bundle": "4.4.*|5.0.*",
     "symfony/twig-bundle": "4.4.*|5.0.*",
-    "tuzex/security-user": "0.2.*"
+    "tuzex/security-user": "0.2.2"
   },
   "require-dev": {
     "phpstan/phpstan": "0.12.*",
